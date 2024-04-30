@@ -2,12 +2,12 @@ import mercadopago
 
 
 def gerar_link_de_pagamento():
-    sdk = mercadopago.SDK("TEST-520820846840078-043012-f4b7251db15c5de9b54c9767eb25259a-336930514")
+    sdk = mercadopago.SDK("APP_USR-520820846840078-043012-94bb70878cdd1c3a495338af368ccaeb-336930514")
 
     payment_data = {
         "items": [
             {
-                "id": "1",
+                "id": "520820846840078",
                 "title": "VIP",
                 "quantity": 1,
                 "currency_id": "BRL",
