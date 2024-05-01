@@ -20,7 +20,7 @@ def callback_handler(call):
 
         # Enviar a mensagem com a imagem e o botão de pagamento
         with open('./imagem/vip.png', 'rb') as photo:
-            bot.send_photo(call.message.chat.id, photo, caption="*VIDEOS TODOS OS DIAS*\n\n+DE 99VIDEOS\nestou esperando você bem molhadinha no meu VIP😍\nCLIQUE PRA VIRAR VIP *R$9,99*", reply_markup=layout_pagamento)
+            bot.send_photo(call.message.chat.id, photo, caption="**VIDEOS TODOS OS DIAS**\n\n+DE 99VIDEOS\nestou esperando você bem molhadinha no meu VIP😍\nCLIQUE PRA VIRAR VIP **R$9,99**", reply_markup=layout_pagamento)
 
 @bot.message_handler(func=lambda message: True)
 def mensagem_genérica(mensagem):
