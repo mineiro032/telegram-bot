@@ -15,7 +15,7 @@ def gerar_link_de_pagamento():
             },
         ],
         "back_urls": {
-            "success": "https://t.me/V1PVendas_bot/compracerta",
+            "success": "https://t.me/+33V5tRO6NwU1ZGUx",
             "failure": "http://test.com/failure/compraerrada",
             "pending": "http://test.com/pending/compraerrada",
         },
