@@ -12,7 +12,7 @@ def callback_handler(call):
         link_pagamento = gerar_link_de_pagamento()
 
         # Criar botão de pagamento
-        botao_pagamento = types.InlineKeyboardButton("Pagar", url=link_pagamento)
+        botao_pagamento = types.InlineKeyboardButton("ASSINAR VIP R$9,99", url=link_pagamento)
 
         # Criar layout com o botão de pagamento
         layout_pagamento = types.InlineKeyboardMarkup()
@@ -20,7 +20,7 @@ def callback_handler(call):
 
         # Enviar a mensagem com a imagem e o botão de pagamento
         with open('./imagem/vip.png', 'rb') as photo:
-            bot.send_photo(call.message.chat.id, photo, caption="*VIDEOS TODOS OS DIAS*\n\n+DE 99VIDEOS\nestou esperando você bem molhadinha no meu VIP😍\nCLIQUE PRA VIRAR VIP *R$9,99*", reply_markup=layout_pagamento)
+            bot.send_photo(call.message.chat.id, photo, caption="*VIDEOS TODOS OS DIAS*\n\n+DE 99VIDEOS\nestou esperando você bem molhadinha no meu VIP😍\n\nCLIQUE PRA VIRAR VIP *R$9,99*", reply_markup=layout_pagamento)
 
 @bot.message_handler(func=lambda message: True)
 def mensagem_genérica(mensagem):
