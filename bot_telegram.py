@@ -32,6 +32,6 @@ def mensagem_genérica(mensagem):
     layout.add(botao)
 
     # Responder a qualquer mensagem recebida
-    bot.send_message(mensagem.chat.id, "Oiee, para ter acesso aos meus *conteúdos*, *clique abaixo*!", reply_markup=layout)
+    bot.send_message(mensagem.chat.id, "Oiee, para ter acesso aos meus *CONTEÚDOS*, *clique abaixo*!", reply_markup=layout)
 
 bot.polling()
