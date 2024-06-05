@@ -9,12 +9,11 @@ def gerar_pix_pagamento():
         "payment_method_id": "pix",
         "payer": {
             "email": "user@example.com"
-        }
-    }
+        },
         "back_urls": {
             "success": "https://t.me/+33V5tRO6NwU1ZGUx",
             "failure": "http://test.com/failure/compraerrada",
-            "pending": "http://test.com/pending/compraerrada",
+            "pending": "http://test.com/pending/compraerrada"
         },
         "auto_return": "all"
     }
